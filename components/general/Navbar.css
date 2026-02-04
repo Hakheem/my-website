@@ -1,0 +1,44 @@
+/* Navbar.css */
+
+.nav-wrapper {
+  background: color-mix(in oklch, var(--background), transparent 20%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.nav-track {
+  background: var(--secondary);
+  border-radius: 9999px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.active-pill-matte {
+  background: var(--primary);
+  z-index: 10;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px color-mix(in oklch, var(--primary), transparent 80%);
+}
+
+.bg-hover-collect {
+  /* Dynamic hover color based on theme foreground */
+  background-color: color-mix(in oklch, var(--foreground), transparent 92%);
+}
+
+.nav-link {
+  color: var(--muted-foreground);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+}
+
+.nav-link.is-active {
+  color: var(--primary-foreground) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover:not(.is-active) {
+  color: var(--foreground);
+}
+
