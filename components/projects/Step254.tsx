@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Smartphone, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Step254() {
-  const images = ["/step_mockup1.png", "/step_mockup2.png", "/step_mockup3.png"];
+  const images = ["/trendify-home.png", "/step_mockup2.png", "/step_mockup3.png"];
   const [current, setCurrent] = useState(0);
 
   return (
     <section className="w-full py-10 px-4 md:px-0">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 bg-card border border-border rounded-xl overflow-hidden hover:border-primary/20 transition-all duration-500 shadow-sm">
+        <div className="grid grid-cols-1 lg:grid-cols-12 bg-card border  transition-all duration-500 shadow-sm">
           
           {/* IMAGE */}
           <div className="lg:col-span-7 h-[500px] bg-secondary/5 relative flex items-center justify-center overflow-hidden border-r border-border/50">
@@ -58,7 +58,7 @@ export function Step254() {
 
             <a 
               href="/projects/step254" 
-              className="flex items-center justify-center gap-2 px-6 py-4 bg-secondary text-secondary-foreground border border-border rounded-xl font-medium hover:bg-muted transition-all w-full sm:w-fit"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground border border-border rounded-lg font-medium hover:bg-muted transition-all w-full sm:w-fit"
             >
               View Case Study <ArrowRight size={16} />
             </a>

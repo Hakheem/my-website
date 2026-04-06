@@ -60,7 +60,7 @@ export default function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground">
-              Hector John · Frontend Developer
+              Hector John · Software Engineer
             </span>
           </div>
 <h1 className="text-5xl md:text-6xl lg:text-[4.5em] font-bold tracking-tight leading-[0.95]">

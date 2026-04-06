@@ -82,7 +82,7 @@ export default function Testimonials() {
             <motion.div 
               key={i}
               whileHover={{ y: -5 }}
-              className={`relative p-8 rounded-[2.5rem] border border-border/50 ${item.bg} backdrop-blur-sm flex flex-col justify-between group overflow-hidden ${item.colSpan}`}
+              className={`relative p-8 rounded-[1.85rem] border border-border/50 ${item.bg} backdrop-blur-sm flex flex-col justify-between group overflow-hidden ${item.colSpan}`}
             >
               {/* Decorative Accent */}
               <div className="absolute -right-4 -top-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity rotate-12">
