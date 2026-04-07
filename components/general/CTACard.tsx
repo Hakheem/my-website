@@ -20,7 +20,7 @@ export default function CTACard({ contactHref = "mailto:hakheem.dev@gmail.com" }
             <span className="text-zinc-800 dark:text-gray-500 italic">IN MIND?</span>
           </h2>
           <p className="text-background/70 text-lg md:text-xl max-w-xl mx-auto">
-            I’m currently accepting new freelance projects and full-time opportunities. Let’s build something that matters.
+            I’m currently accepting new projects and full-time opportunities. Let’s build you a solution that matters.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center pt-8">

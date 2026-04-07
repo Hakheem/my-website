@@ -66,7 +66,7 @@ export default function Testimonials() {
     <section className="w-full py-20 bg-background overflow-hidden">
      
 
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+      <div className="max-w-6xl mx-auto px-3 md:px-6">
         <div className="flex flex-col items-center text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">
            Words from <span className="text-primary italic">People I've Helped.</span>

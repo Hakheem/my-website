@@ -45,7 +45,7 @@ export default function Hero() {
       </motion.div>
 
       {/* 2. CONTENT LAYER */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-32 items-center h-full">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-3 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-32 items-center h-full">
         
         {/* LEFT SIDE: Heading Only */}
         <motion.div 
