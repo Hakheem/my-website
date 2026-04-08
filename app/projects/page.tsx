@@ -2,87 +2,182 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { FolderGit2, ExternalLink, ArrowUpRight, Github } from 'lucide-react';
 import CTACard from '@/components/general/CTACard';
 
 const PROJECTS = [
   {
     id: 1,
-    title: "Mahanaim College Redesign",
-    category: "Academic Portal",
-    challenge: "The legacy system was non-responsive and difficult to navigate, leading to high bounce rates during peak enrollment periods.",
-    solution: "Engineered a custom WordPress CMS with a Next.js frontend, streamlining the application flow and implementing high-speed API routes.",
-    impact: "Increased student enrollment by 12% and reduced page load times by 65%.",
-    tags: ["Next.js", "WordPress API", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop",
-    link: "https://mahanaim.ac.ke",
+    title: "SkillBridge LMS",
+    category: "EdTech Platform",
+    challenge: "Most LMS platforms were either too expensive or not built for the East African learner. A gap existed for an affordable, locally-relevant environment where Kenyan students could learn with proper structure, progress tracking, and instructors could actually earn.",
+    solution: "Built a full-stack LMS from scratch — course management engine, real-time student progress tracking, M-Pesa payment integration, and a low-latency S3 video pipeline. Launched as a personal SaaS, validated it with real users, and eventually sold it to a buyer with the funds to take it further.",
+    impact: "110+ learners served. Acquired and in active operation.",
+    tags: ["Next.js", "PostgreSQL", "AWS S3", "M-Pesa", "Tailwind CSS"],
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+    link: "https://skilly-bridge.vercel.app/",
     github: "#",
-    caseStudy: "/projects/mahanaim-college"
+    caseStudy: "/projects/skillbridge"
   },
   {
     id: 2,
-    title: "BaraBara Voyagers",
-    category: "Travel Logistics",
-    challenge: "Travelers lacked a centralized system for real-time booking and secure mobile payments for local logistics.",
-    solution: "Developed a comprehensive booking engine integrated with M-Pesa API and a Node.js backend for real-time seat availability.",
-    impact: "Automated 90% of booking confirmations and secured thousands of transactions.",
-    tags: ["React", "Node.js", "M-Pesa API"],
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
-    link: "#",
+    title: "Sixpoint Victoria",
+    category: "Hospitality Redesign",
+    challenge: "Sixpoint Victoria — a 3-star hotel — was losing direct bookings every day through a broken, non-converting website. The UI was outdated, the booking flow was completely non-functional, and the digital experience didn't reflect the quality of the property.",
+    solution: "Delivered a complete UI overhaul and rebuilt the booking engine from scratch. New luxury-focused visual identity, smooth Framer Motion interactions, and a fully working direct booking flow — replacing what was essentially a dead digital storefront.",
+    impact: "Transformed a zero-conversion site into a premium, fully-functional booking experience.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Redesign"],
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+    link: "https://sixpoint-eight.vercel.app/",
     github: "#",
-    caseStudy: "/projects/barabara-voyagers"
+    caseStudy: "/projects/sixpoint"
   },
   {
     id: 3,
-    title: "IYF Academy Portal",
-    category: "Learning Management",
-    challenge: "Tracking student progress and curriculum management was managed manually via spreadsheets, leading to data inconsistencies.",
-    solution: "Built an automated educational dashboard using TypeScript and Supabase for real-time progress tracking and reporting.",
-    impact: "Reduced administrative overhead by 40 hours per month for teaching staff.",
-    tags: ["TypeScript", "Supabase", "UI/UX"],
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop",
+    title: "East Side Urban",
+    category: "E-Commerce Platform",
+    challenge: "Building a full-featured streetwear e-commerce store that could handle complex product variations, real-time inventory, and seamless M-Pesa checkout — while matching the culture and visual energy of the brand.",
+    solution: "Engineered a complete full-stack retail platform with Redux state management, a dynamic product filtering system, a secure multi-step M-Pesa checkout, and a merchant admin dashboard — all optimized for sub-second transitions.",
+    impact: "Production-ready platform handling 200+ SKUs with a complete merchant backend.",
+    tags: ["React", "Node.js", "MongoDB", "Redux", "M-Pesa API"],
+    image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop",
+    link: "https://east-side-urban-frontend.onrender.com/",
+    github: "#",
+    caseStudy: "/projects/east-side-urban"
+  },
+  {
+    id: 4,
+    title: "EastRide AI Marketplace",
+    category: "AI-Powered Platform",
+    challenge: "Traditional car marketplaces make discovery painful — keyword search only works if you know exactly what to type. Meanwhile, sellers waste hours entering vehicle specs manually for each listing.",
+    solution: "Built a dual-AI system: buyers upload a car photo and Gemini AI + Cloudinary finds the closest matching listings via computer vision. On the admin side, the same AI stack auto-extracts full vehicle specs from photos, eliminating manual data entry entirely.",
+    impact: "A fully working AI pipeline that redefines both the buyer and seller experience in auto commerce.",
+    tags: ["Next.js", "Gemini AI", "Cloudinary", "MongoDB", "Next-Auth"],
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070&auto=format&fit=crop",
+    link: "https://east-ride.vercel.app/",
+    github: "#",
+    caseStudy: "/projects/east-ride"
+  },
+  {
+    id: 5,
+    title: "Trendify",
+    category: "Mobile UI/UX Design",
+    challenge: "Sneaker culture in East Africa had no dedicated digital home. Existing platforms were generic, lacked cultural context, and had no proper local delivery UX. The challenge was designing something that felt street-native yet polished enough for everyday use.",
+    solution: "Designed a high-fidelity mobile app — brand identity, screen architecture, user flows, and advanced micro-interactions — entirely in Figma with ProtoPie prototyping. Every screen was built around the buyer journey from browsing to doorstep delivery.",
+    impact: "A complete, handoff-ready mobile product design with prototype-level interactions.",
+    tags: ["Figma", "ProtoPie", "UI/UX Design", "Prototyping", "Mobile Design"],
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop",
     link: "#",
     github: "#",
-    caseStudy: "/projects/iyf-academy"
+    caseStudy: "/projects/step254"
   }
 ];
 
+const MORE_PROJECTS = [
+  {
+    name: "Tibapoint",
+    logo: "/tibapoint-logo.png",
+    link: "https://tibapoint.vercel.app",
+    category: "Healthcare Platform",
+    color: "#0d61cf"
+  },
+  {
+    name: "Barabara Voyagers",
+    logo: "/barabara-logo.png",
+    link: "https://barabara-voyagers.vercel.app",
+    category: "Tours & Travel",
+    color: "#e9a023"
+  },
+  {
+    name: "Wazirent",
+    logo: "/wazirent.png",
+    link: "https://wazirent.vercel.app",
+    category: "Real Estate",
+    color: "#4d2402"
+  },
+  {
+    name: "MYTO",
+    logo: "/myto.png",
+    link: "https://my-ngo.vercel.app",
+    category: "N.G.O",
+    color: "#15b301"
+  },
+];
+
 export default function ProjectsPage() {
+  // Quadruple the items so the infinite loop looks natural
+  const sliderItems = [
+    ...MORE_PROJECTS,
+    ...MORE_PROJECTS,
+    ...MORE_PROJECTS,
+    ...MORE_PROJECTS,
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
-      
-      {/* 1. HERO SECTION */}
+
+      <style>{`
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+        .slider-track {
+          animation: marquee 22s linear infinite;
+          will-change: transform;
+        }
+        .slider-track:hover {
+          animation-play-state: paused;
+        }
+        .logo-card img {
+          filter: grayscale(100%);
+          transition: filter 0.3s ease;
+        }
+        .logo-card:hover img {
+          filter: grayscale(0%);
+        }
+        .project-tooltip {
+          opacity: 0;
+          transform: translateY(8px);
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          pointer-events: none;
+        }
+        .logo-card:hover .project-tooltip {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      `}</style>
+
+      {/* ── 1. HERO ── */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 max-w-7xl mx-auto px-4 md:px-6">
-          <div className="max-w-3xl">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }} 
-              animate={{ opacity: 1, y: 0 }} 
-              transition={{ duration: 0.5 }}
-            >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-secondary/30 mb-6">
-                <FolderGit2 size={14} className="text-primary" />
-                <span className="text-[10px] uppercase tracking-widest font-bold opacity-80">
-                  Portfolio / Selected Works
-                </span>
-              </div>
+        <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-secondary/30 mb-6">
+              <FolderGit2 size={14} className="text-primary" />
+              <span className="text-[10px] uppercase tracking-widest font-bold opacity-80">
+                Portfolio / Selected Works
+              </span>
+            </div>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
-                Building the future, <br />
-                <span className="text-muted-foreground">pixel by pixel.</span>
-              </h1>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
+              Building the future, <br />
+              <span className="text-muted-foreground">pixel by pixel.</span>
+            </h1>
 
-              <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed max-w-2xl">
-                A deep dive into the engineering behind my digital products. 
-                From complex backend integrations to fluid frontend interfaces.
-              </p>
-            </motion.div>
-          </div>
+            <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed max-w-2xl">
+              A deep dive into the engineering behind my digital products.
+              From robust pipelines and backend integrations to fluid frontend interfaces.
+            </p>
+          </motion.div>
+        </div>
       </section>
 
-      {/* 2. PROJECTS NARRATIVE SECTION */}
+      {/* ── 2. PROJECTS ── */}
       <section className="pb-32 max-w-7xl mx-auto px-4 md:px-6">
-        <div className=" space-y-32 md:space-y-48">
+        <div className="space-y-32 md:space-y-48">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={project.id}
@@ -94,7 +189,7 @@ export default function ProjectsPage() {
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               }`}
             >
-              {/* Image Container */}
+              {/* Image */}
               <div className="w-full lg:w-3/5 group cursor-pointer relative overflow-hidden rounded-2xl border border-border">
                 <img
                   src={project.image}
@@ -104,7 +199,7 @@ export default function ProjectsPage() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500" />
               </div>
 
-              {/* Text Content */}
+              {/* Text */}
               <div className="w-full lg:w-2/5 space-y-6">
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-2 block">
@@ -115,7 +210,10 @@ export default function ProjectsPage() {
                   </h2>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="text-[10px] px-2 py-1 bg-secondary/50 border border-border rounded-md font-medium uppercase tracking-tighter">
+                      <span
+                        key={tag}
+                        className="text-[10px] px-2 py-1 bg-secondary/50 border border-border rounded-md font-medium uppercase tracking-tighter"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -124,31 +222,46 @@ export default function ProjectsPage() {
 
                 <div className="space-y-6 border-l-2 border-primary/20 pl-6 py-2">
                   <div>
-                    <h4 className="text-[11px] uppercase tracking-widest font-bold text-muted-foreground mb-1">Challenge</h4>
+                    <h4 className="text-[11px] uppercase tracking-widest font-bold text-muted-foreground mb-1">
+                      Challenge
+                    </h4>
                     <p className="text-sm md:text-base leading-relaxed text-muted-foreground/90">
                       {project.challenge}
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-[11px] uppercase tracking-widest font-bold text-primary mb-1">Solution & Impact</h4>
+                    <h4 className="text-[11px] uppercase tracking-widest font-bold text-primary mb-1">
+                      Solution & Impact
+                    </h4>
                     <p className="text-sm md:text-base leading-relaxed font-medium">
-                      {project.solution} <span className="text-primary italic">{project.impact}</span>
+                      {project.solution}{" "}
+                      <span className="text-primary italic">{project.impact}</span>
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 pt-4">
-                  <a 
+                  <a
                     href={project.caseStudy}
                     className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full text-sm font-bold transition-transform active:scale-95 hover:opacity-90"
                   >
                     View Case Study <ArrowUpRight size={16} />
                   </a>
                   <div className="flex items-center gap-2">
-                    <a href={project.link} className="p-3 rounded-full border border-border hover:bg-secondary/50 transition-colors">
-                      <ExternalLink size={18} />
-                    </a>
-                    <a href={project.github} className="p-3 rounded-full border border-border hover:bg-secondary/50 transition-colors">
+                    {project.link !== "#" && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 rounded-full border border-border hover:bg-secondary/50 transition-colors"
+                      >
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
+                    <a
+                      href={project.github}
+                      className="p-3 rounded-full border border-border hover:bg-secondary/50 transition-colors"
+                    >
                       <Github size={18} />
                     </a>
                   </div>
@@ -159,11 +272,90 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* 3. CTA */}
-      <div className="pb-20 ">
-          <CTACard contactHref="/contact" />
+      {/* ── 3. MORE PROJECTS SLIDER ── */}
+      <section className="pb-24 max-w-7xl mx-auto px-4 md:px-6">
+        <div className="border-t border-border pt-16 flex flex-col lg:flex-row gap-10 lg:gap-0 items-start lg:items-center">
+
+          {/* Left label — 25% */}
+          <div className="w-full lg:w-[25%] shrink-0 lg:pr-10">
+            <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-3">
+              More Work
+            </p>
+            <h3 className="text-2xl md:text-3xl font-bold leading-snug mb-3">
+              A few more things<br />
+              I&apos;ve shipped.
+            </h3>
+            <p className="text-sm text-muted-foreground/70 leading-relaxed">
+              Beyond the featured projects — more products built, more problems solved.
+            </p>
+          </div>
+
+          {/* Right slider — 75% */}
+          <div className="w-full lg:w-[75%] relative overflow-hidden">
+            {/* Fade masks */}
+            <div
+              className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to right, var(--background) 0%, transparent 100%)",
+              }}
+            />
+            <div
+              className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+              style={{
+                background:
+                  "linear-gradient(to left, var(--background) 0%, transparent 100%)",
+              }}
+            />
+
+            {/* Track */}
+            <div className="slider-track flex gap-6 w-fit h-fit py-4">
+              {sliderItems.map((item, i) => (
+                <a
+                  key={i}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="logo-card group relative shrink-0 flex flex-col items-center gap-3"
+                >
+                  <div className="w-40 h-24 rounded-xl border border-border bg-secondary/30 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-primary/40 group-hover:bg-secondary/60 relative">
+                    {/* Added actual image tags */}
+                    <img 
+                      src={item.logo} 
+                      alt={item.name}
+                      className="w-full h-full object-contain p-3 transition-all duration-300"
+                      onError={(e) => {
+                        // Fallback if image doesn't exist
+                        (e.target as HTMLImageElement).style.display = 'none';
+                        const parent = (e.target as HTMLImageElement).parentElement;
+                        if (parent) {
+                          const span = document.createElement('span');
+                          span.className = 'text-sm font-bold tracking-tight text-center px-3';
+                          span.style.color = item.color;
+                          span.textContent = item.name;
+                          parent.appendChild(span);
+                        }
+                      }}
+                    />
+                  </div>
+
+                  {/* Fixed tooltip - now centered on the image */}
+                  <div className="project-tooltip absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-foreground/90 backdrop-blur-sm text-background text-[10px] font-medium px-3 py-1.5 rounded-full shadow-lg z-20 whitespace-nowrap">
+                    {item.category} ↗
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. CTA ── */}
+      <div className="pb-20">
+        <CTACard contactHref="/contact" />
       </div>
-      
     </div>
   );
 }
+
+

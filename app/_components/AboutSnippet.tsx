@@ -17,7 +17,7 @@ const techStack = [
 export default function AboutSection() {
   const [activeTab, setActiveTab] = useState("about");
 
-  const tabs = [
+  const tabs = [ 
     { id: "about", title: "About Me", icon: <User size={16} /> },
     { id: "experience", title: "Work Experience", icon: <Briefcase size={16} /> },
     { id: "education", title: "Education & Certifications", icon: <GraduationCap size={16} /> },

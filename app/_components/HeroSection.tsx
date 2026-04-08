@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef} 
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
+      className="relative py-32 md:py-0 lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
     >
       {/* 1. BACKGROUND IMAGE */}
       <motion.div 

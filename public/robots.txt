@@ -1,0 +1,26 @@
+# Allow all crawlers access
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hakheem.netlify.app/sitemap.xml
+
+# Crawl delay to prevent server overload (optional)
+Crawl-delay: 1
+
+# Disable AI training crawlers (optional - to protect your content)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Allow search engines but block spam bots
+User-agent: SemrushBot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /

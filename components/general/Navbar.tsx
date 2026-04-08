@@ -27,6 +27,16 @@ export default function Navbar() {
     }
   });
 
+  // Helper function to check if a nav item is active
+  const isActive = (path: string) => {
+    if (path === "/") {
+      return pathname === "/";
+    }
+    // For non-home routes, check if pathname starts with the nav path
+    // This handles nested routes like /projects/east-ride, /contact/something, etc.
+    return pathname.startsWith(path);
+  };
+
   return (
     <motion.header
       variants={{
@@ -52,7 +62,7 @@ export default function Navbar() {
           )}
 
           {navItems.map((item) => {
-            const isActive = pathname === item.path;
+            const active = isActive(item.path);
             const isHovered = hoveredPath === item.path;
 
             return (
@@ -60,11 +70,12 @@ export default function Navbar() {
                 key={item.path}
                 href={item.path}
                 onMouseEnter={() => setHoveredPath(item.path)}
-                className={`relative px-6 py-2 text-sm font-medium no-underline rounded-full nav-link ${isActive ? "is-active" : ""
-                  }`}
+                className={`relative px-6 py-2 text-sm font-medium no-underline rounded-full nav-link ${
+                  active ? "is-active" : ""
+                }`}
               >
                 {/* THE ACTIVE PILL */}
-                {isActive && (
+                {active && (
                   <motion.div
                     layoutId="active-pill-logic"
                     className="active-pill-matte absolute inset-0"
@@ -85,7 +96,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-
         </nav>
       </div>
     </motion.header>

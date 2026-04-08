@@ -5,6 +5,7 @@ import Navbar from "@/components/general/Navbar";
 import Footer from "@/components/general/Footer";
 import { ThemeProvider } from "@/components/general/theme-provider";
 import { ModeToggle } from "@/components/general/theme-toggle";
+import { Toaster } from "@/components/ui/sonner"
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -66,8 +67,9 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
-            <ModeToggle />
+          <ModeToggle />
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

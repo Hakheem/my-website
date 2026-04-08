@@ -4,8 +4,7 @@ import { EastRide } from '@/components/projects/EastRide';
 import { EastSideUrban } from '@/components/projects/EastSide';
 import { SixpointProject } from '@/components/projects/Sixpoint';
 import { SkillBridge } from '@/components/projects/SkillBridge';
-import { Step254 } from '@/components/projects/Step254';
-import React from 'react';
+import { Trendify } from '@/components/projects/Step254';
 
 const SelectedProjects = () => {
   return (
@@ -45,8 +44,8 @@ const SelectedProjects = () => {
        <SixpointProject />
        <SkillBridge />
        <EastRide/>
-       <EastSideUrban/>
-       <Step254 />
+       <EastSideUrban/> 
+       <Trendify />
 
       </div>
     </section>

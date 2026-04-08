@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Smartphone, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
-export function Step254() {
+export function Trendify() {
   const images = ["/trendify-home.png", "/step_mockup2.png", "/step_mockup3.png"];
   const [current, setCurrent] = useState(0);
 
@@ -15,7 +15,7 @@ export function Step254() {
             <div className="relative w-[280px] h-[550px] transition-all duration-500 ease-in-out">
                <img 
                  src={images[current]} 
-                 alt="Step254 Mobile UI"
+                 alt="Trendify Mobile UI"
                  className="w-full h-full object-contain drop-shadow-2xl"
                />
             </div>
@@ -42,7 +42,7 @@ export function Step254() {
               <span className="text-sm tracking-wider uppercase">Mobile UI/UX Design</span>
             </div>
             
-            <h3 className="text-3xl font-bold mb-4">Step254: Footwear Delivery</h3>
+            <h3 className="text-3xl font-bold mb-4">Trendify: Footwear Delivery</h3>
             
             <p className="text-muted-foreground leading-relaxed mb-8 text-lg">
               A high-fidelity mobile application concept centered on the sneaker culture and local delivery logistics. The project focuses on a "mobile-first" user experience, utilizing ProtoPie for advanced micro-interactions and Figma for a clean, street-wear inspired visual identity.
@@ -57,7 +57,7 @@ export function Step254() {
             </div>
 
             <a 
-              href="/projects/step254" 
+              href="/projects/Trendify" 
               className="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground border border-border rounded-lg font-medium hover:bg-muted transition-all w-full sm:w-fit"
             >
               View Case Study <ArrowRight size={16} />

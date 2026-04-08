@@ -4,6 +4,7 @@ import AboutSection from './_components/AboutSnippet'
 import SelectedProjects from './_components/SelectedProjects'
 import Testimonials from './_components/Testimonials'
 import CTACard from '@/components/general/CTACard'
+import ContactSection from './_components/ContactSection'
 
 const MainHomePage = () => {
   return (
@@ -13,6 +14,7 @@ const MainHomePage = () => {
       <SelectedProjects />
       <AboutSection />
       <Testimonials />
+      <ContactSection />
       <CTACard contactHref="/contact" />
       
     </div>
