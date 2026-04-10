@@ -8,13 +8,13 @@ import CTACard from '@/components/general/CTACard';
 const PROJECTS = [
   {
     id: 1,
-    title: "SkillBridge LMS",
+    title: "SkillBridge",
     category: "EdTech Platform",
-    challenge: "Most LMS platforms were either too expensive or not built for the East African learner. A gap existed for an affordable, locally-relevant environment where Kenyan students could learn with proper structure, progress tracking, and instructors could actually earn.",
-    solution: "Built a full-stack LMS from scratch — course management engine, real-time student progress tracking, M-Pesa payment integration, and a low-latency S3 video pipeline. Launched as a personal SaaS, validated it with real users, and eventually sold it to a buyer with the funds to take it further.",
+    challenge: "Most LMS platforms are either quite expensive or not built for the East African learner. A gap existed for an affordable, locally-relevant environment where Kenyan students could learn with proper structure, progress tracking, and instructors could actually earn.",
+    solution: "Built a full-stack LMS from scratch, course management engine, real-time student progress tracking, Multiple payment methods, and a low-latency S3 video pipeline. Launched as a personal SaaS, validated it with real users, and eventually sold it to an institution with the funds to take it further.",
     impact: "110+ learners served. Acquired and in active operation.",
     tags: ["Next.js", "PostgreSQL", "AWS S3", "M-Pesa", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+    image: "/lms.jpg",
     link: "https://skilly-bridge.vercel.app/",
     github: "#",
     caseStudy: "/projects/skillbridge"
@@ -22,12 +22,12 @@ const PROJECTS = [
   {
     id: 2,
     title: "Sixpoint Victoria",
-    category: "Hospitality Redesign",
+    category: "Website Redesign",
     challenge: "Sixpoint Victoria — a 3-star hotel — was losing direct bookings every day through a broken, non-converting website. The UI was outdated, the booking flow was completely non-functional, and the digital experience didn't reflect the quality of the property.",
-    solution: "Delivered a complete UI overhaul and rebuilt the booking engine from scratch. New luxury-focused visual identity, smooth Framer Motion interactions, and a fully working direct booking flow — replacing what was essentially a dead digital storefront.",
+    solution: "Delivered a complete UI overhaul and rebuilt the booking engine from scratch. New luxury-focused visual identity, smooth interactions, and a fully working direct booking flow, replacing what was essentially a dead digital storefront.",
     impact: "Transformed a zero-conversion site into a premium, fully-functional booking experience.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Redesign"],
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+    image: "/sixpoint.jpg",
     link: "https://sixpoint-eight.vercel.app/",
     github: "#",
     caseStudy: "/projects/sixpoint"
@@ -40,23 +40,23 @@ const PROJECTS = [
     solution: "Engineered a complete full-stack retail platform with Redux state management, a dynamic product filtering system, a secure multi-step M-Pesa checkout, and a merchant admin dashboard — all optimized for sub-second transitions.",
     impact: "Production-ready platform handling 200+ SKUs with a complete merchant backend.",
     tags: ["React", "Node.js", "MongoDB", "Redux", "M-Pesa API"],
-    image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop",
+    image: "/eastside.avif",
     link: "https://east-side-urban-frontend.onrender.com/",
     github: "#",
-    caseStudy: "/projects/east-side-urban"
+    caseStudy: "/projects/eastside"
   },
   {
     id: 4,
     title: "EastRide AI Marketplace",
     category: "AI-Powered Platform",
-    challenge: "Traditional car marketplaces make discovery painful — keyword search only works if you know exactly what to type. Meanwhile, sellers waste hours entering vehicle specs manually for each listing.",
+    challenge: "Traditional car marketplaces make discovery painful, keyword search only works if you know exactly what to type. Meanwhile, sellers waste hours entering vehicle specs manually for each listing.",
     solution: "Built a dual-AI system: buyers upload a car photo and Gemini AI + Cloudinary finds the closest matching listings via computer vision. On the admin side, the same AI stack auto-extracts full vehicle specs from photos, eliminating manual data entry entirely.",
     impact: "A fully working AI pipeline that redefines both the buyer and seller experience in auto commerce.",
     tags: ["Next.js", "Gemini AI", "Cloudinary", "MongoDB", "Next-Auth"],
-    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070&auto=format&fit=crop",
+    image: "/eastride.avif",
     link: "https://east-ride.vercel.app/",
     github: "#",
-    caseStudy: "/projects/east-ride"
+    caseStudy: "/projects/eastride"
   },
   {
     id: 5,
@@ -66,31 +66,31 @@ const PROJECTS = [
     solution: "Designed a high-fidelity mobile app — brand identity, screen architecture, user flows, and advanced micro-interactions — entirely in Figma with ProtoPie prototyping. Every screen was built around the buyer journey from browsing to doorstep delivery.",
     impact: "A complete, handoff-ready mobile product design with prototype-level interactions.",
     tags: ["Figma", "ProtoPie", "UI/UX Design", "Prototyping", "Mobile Design"],
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop",
+    image: "/step.avif",
     link: "#",
     github: "#",
-    caseStudy: "/projects/step254"
+    caseStudy: "/projects/trendify"
   }
 ];
 
 const MORE_PROJECTS = [
   {
     name: "Tibapoint",
-    logo: "/tibapoint-logo.png",
+    logo: "/tibapoint.png",
     link: "https://tibapoint.vercel.app",
     category: "Healthcare Platform",
     color: "#0d61cf"
   },
   {
     name: "Barabara Voyagers",
-    logo: "/barabara-logo.png",
+    logo: "/barabara_logo.svg",
     link: "https://barabara-voyagers.vercel.app",
     category: "Tours & Travel",
     color: "#e9a023"
   },
   {
     name: "Wazirent",
-    logo: "/wazirent.png",
+    logo: "/wazilogo.png",
     link: "https://wazirent.vercel.app",
     category: "Real Estate",
     color: "#4d2402"
@@ -194,7 +194,7 @@ export default function ProjectsPage() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[300px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-75 md:h-125 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500" />
               </div>
@@ -319,7 +319,6 @@ export default function ProjectsPage() {
                   className="logo-card group relative shrink-0 flex flex-col items-center gap-3"
                 >
                   <div className="w-40 h-24 rounded-xl border border-border bg-secondary/30 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-primary/40 group-hover:bg-secondary/60 relative">
-                    {/* Added actual image tags */}
                     <img 
                       src={item.logo} 
                       alt={item.name}
@@ -339,7 +338,7 @@ export default function ProjectsPage() {
                     />
                   </div>
 
-                  {/* Fixed tooltip - now centered on the image */}
+                  {/* tooltip */}
                   <div className="project-tooltip absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-foreground/90 backdrop-blur-sm text-background text-[10px] font-medium px-3 py-1.5 rounded-full shadow-lg z-20 whitespace-nowrap">
                     {item.category} ↗
                   </div>

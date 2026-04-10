@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef} 
-      className="relative py-32 md:py-0 lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
+      className="relative pt-28 pb-20 md:pt-0 md:pb-0  lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
     >
       {/* 1. BACKGROUND IMAGE */}
       <motion.div 
@@ -64,8 +64,8 @@ export default function Hero() {
             </span>
           </div>
 <h1 className="text-5xl md:text-6xl lg:text-[4.5em] font-bold tracking-tight leading-[0.95]">
-  Engineering <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground/50">Interfaces</span> that Drive Digital <br />
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground/50">
+  Engineering <span className="text-transparent bg-clip-text bg-linear-to-r from-foreground to-muted-foreground/50">Interfaces</span> that Drive Digital <br />
+  <span className="text-transparent bg-clip-text bg-linear-to-r from-foreground to-muted-foreground/50">
     Growth. 
   </span>
 </h1>
@@ -122,7 +122,7 @@ export default function Hero() {
         className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
       >
         <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/80">Scroll</span>
-        <div className="w-[1px] h-10 bg-gradient-to-b from-transparent via-muted-foreground/50 to-transparent" />
+        <div className="w-px h-10 bg-linear-to-b from-transparent via-muted-foreground/50 to-transparent" />
       </motion.div>
 
     </section>

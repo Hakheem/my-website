@@ -17,7 +17,7 @@ export function EastSideUrban() {
         "/eastside_cart.png"      // Checkout flow
       ]}
       liveLink="https://east-side-urban-frontend.onrender.com/"
-      caseStudyLink="/projects/east-side-urban"
+      caseStudyLink="/projects/eastside"
     />
   );
 }

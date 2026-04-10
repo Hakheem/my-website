@@ -28,7 +28,7 @@ const TabBtn = ({ active, onClick, label, icon: Icon }: any) => (
   <button 
     type="button"
     onClick={onClick}
-    className={`flex-1 flex items-center justify-center gap-2 py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg transition-all ${
+    className={`flex-1 flex items-center justify-center gap-2 py-3 text-[10px] font-bold uppercase tracking-widest rounded-xl transition-all ${
       active ? 'bg-background text-foreground shadow-sm' : 'text-muted-foreground hover:bg-secondary/50'
     }`}
   >
@@ -178,7 +178,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-10">
             <div className="space-y-3">
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Direct Contact</p>
-              <a href="mailto:hello@hectorjohn.com" className="text-lg font-medium hover:underline underline-offset-4 decoration-primary transition-all">hello@hectorjohn.com</a>
+              <a href="mailto:hakheem.dev@gmail.com" className="text-lg font-medium hover:underline underline-offset-4 decoration-primary transition-all">hakheem.dev</a>
             </div>
             <div className="space-y-3">
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Location</p>
@@ -189,19 +189,19 @@ export default function ContactPage() {
           <div className="space-y-6 pt-4 border-t border-border">
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">Find me on</p>
             <div className="flex flex-wrap gap-6">
-              <a href="https://linkedin.com/in/hector-john" className="flex items-center gap-2 hover:text-primary transition-all group">
+              <a href="www.linkedin.com/in/hectorjohn" target='_blank' className="flex items-center gap-2 hover:text-primary transition-all group">
                 <Linkedin size={20} />
                 <span className="text-sm ">LinkedIn</span>
               </a>
-              <a href="https://github.com/Hakheem" className="flex items-center gap-2 hover:text-primary transition-all group">
+              <a href="https://github.com/Hakheem" target='_blank' className="flex items-center gap-2 hover:text-primary transition-all group">
                 <Github size={20} />
                 <span className="text-sm ">GitHub</span>
               </a>
-              <a href="https://instagram.com/hakheem.dev" className="flex items-center gap-2 hover:text-primary transition-all group">
+              <a href="https://instagram.com/hakheem.dev" target='_blank' className="flex items-center gap-2 hover:text-primary transition-all group">
                 <Instagram size={20} />
                 <span className="text-sm ">Instagram</span>
               </a>
-              <a href="https://tiktok.com/@hakheem.dev" className="flex items-center gap-2 hover:text-primary transition-all group">
+              <a href="https://tiktok.com/@hakheem.dev" target='_blank' className="flex items-center gap-2 hover:text-primary transition-all group">
                 <FaTiktok size={18} />
                 <span className="text-sm ">TikTok</span>
               </a>
@@ -212,7 +212,7 @@ export default function ContactPage() {
         <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} className="relative">
           <div className="bg-secondary/10 border border-border rounded-2xl p-8 md:p-12 shadow-2xl shadow-primary/5">
             
-            <div className="bg-secondary/40 border border-border p-1 rounded-lg flex mb-10">
+            <div className="bg-secondary/40 border border-border p-1 rounded-xl flex mb-10">
               <TabBtn active={formType === 'quote'} onClick={() => {setFormType('quote'); setIsCallback(false);}} label="Project Quote" icon={LayoutDashboard} />
               <TabBtn active={formType === 'message'} onClick={() => {setFormType('message'); setIsCallback(false);}} label="General" icon={MessageSquare} />
             </div>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="John Doe" 
-                        className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
+                        className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
                       />
                       {errors.name && <p className="text-sm text-red-500 mt-1.5 ml-1">{errors.name}</p>}
                     </div>
@@ -243,13 +243,13 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="john@company.com" 
-                        className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
+                        className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
                       />
                       {errors.email && <p className="text-sm text-red-500 mt-1.5 ml-1">{errors.email}</p>}
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between py-2 px-4 bg-background/40 border border-dashed border-border rounded-lg">
+                  <div className="flex items-center justify-between py-2 px-4 bg-background/40 border border-dashed border-border rounded-xl">
                     <span className="text-xs font-medium flex items-center gap-2 opacity-70"><PhoneCall size={14} className="text-primary"/> Prefer a callback?</span>
                     <button type="button" onClick={() => setIsCallback(!isCallback)} className={`w-11 h-6 rounded-full transition-colors relative ${isCallback ? 'bg-primary' : 'bg-muted'}`}>
                       <div className={`absolute top-1 w-4 h-4 bg-white rounded-full transition-all ${isCallback ? 'left-6' : 'left-1'}`} />
@@ -269,7 +269,7 @@ export default function ContactPage() {
                               value={formData.phone}
                               onChange={handleChange}
                               placeholder="+254 700 000 000" 
-                              className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
+                              className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all" 
                             />
                             {errors.phone && <p className="text-sm text-red-500 mt-1.5 ml-1">{errors.phone}</p>}
                           </div>
@@ -282,7 +282,7 @@ export default function ContactPage() {
                                   name="serviceType"
                                   value={formData.serviceType}
                                   onChange={handleChange}
-                                  className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary appearance-none transition-all pr-12 cursor-pointer"
+                                  className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary appearance-none transition-all pr-12 cursor-pointer"
                                   style={{
                                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
                                     backgroundPosition: 'right 1rem center',
@@ -292,7 +292,7 @@ export default function ContactPage() {
                                 >
                                   <option value="">Select a service</option>
                                   {services.map((service) => (
-                                    <option key={service} value={service}>
+                                    <option key={service} value={service} className='dark:text-muted-foreground' >
                                       {service}
                                     </option>
                                   ))}
@@ -307,7 +307,7 @@ export default function ContactPage() {
                                   name="budget"
                                   value={formData.budget}
                                   onChange={handleChange}
-                                  className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary appearance-none transition-all pr-12 cursor-pointer"
+                                  className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary appearance-none transition-all pr-12 cursor-pointer dark:text-muted-foreground"
                                   style={{
                                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
                                     backgroundPosition: 'right 1rem center',
@@ -337,13 +337,13 @@ export default function ContactPage() {
                       onChange={handleChange}
                       rows={4} 
                       placeholder="Describe your objectives..." 
-                      className="w-full  text-foreground border border-gray-200 rounded-lg px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all resize-none" 
+                      className="w-full  text-foreground border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary transition-all resize-none" 
                     />
                   </div>
 
                   <button 
                     disabled={isSubmitting} 
-                    className="w-full bg-foreground text-background py-5 rounded-lg text-[11px] font-black uppercase tracking-[0.3em] flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all active:scale-[0.98] disabled:opacity-70"
+                    className="w-full bg-foreground text-background py-5 rounded-xl text-[11px] font-black uppercase tracking-[0.3em] flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all active:scale-[0.98] disabled:opacity-70"
                   >
                     {isSubmitting ? "Encrypting Message..." : isCallback ? "Confirm Callback" : "Initialize Proposal"}
                     <Send size={16} />

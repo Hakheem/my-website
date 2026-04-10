@@ -18,7 +18,7 @@ export function EastRide() {
         "/book_test_drive.png"    
       ]}
       liveLink="https://east-ride.vercel.app/"
-      caseStudyLink="/projects/east-ride"
+      caseStudyLink="/projects/eastride"
     />
   );
 }

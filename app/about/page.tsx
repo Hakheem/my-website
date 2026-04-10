@@ -36,7 +36,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen max-w-6xl mx-auto selection:bg-primary/30">
+    <div className="min-h-screen max-w-7xl mx-auto selection:bg-primary/30">
       {/* 1. HERO */}
       <section className="relative pt-28 pb-20">
         <div className="w-full mx-auto px-4">
@@ -65,16 +65,6 @@ export default function AboutPage() {
 
                 <p className="text-lg font-normal text-muted-foreground leading-relaxed max-w-xl">
                  Focused on solving problems through architectures and seamless user interfaces. I bridge the gap between complex engineering logic and intuitive design. 
-                 {/* Current focus is on  
-                  <a 
-                    href="https://kheem.netlify.app" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="font-medium text-foreground hover:text-primary transition-colors mx-1"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    Kheem Technologies
-                  </a>. */}
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 mt-3 pt-4">
@@ -176,7 +166,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="relative h-[300px] rounded-xl overflow-hidden border border-border">
+              <div className="relative h-75 rounded-xl overflow-hidden border border-border">
                 <img
                   src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
                   alt="Detail"
@@ -201,7 +191,7 @@ export default function AboutPage() {
                   </p>
                   <div className="flex flex-wrap gap-3 pt-4">
                     <span className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/30 px-3 py-1.5 rounded-full">
-                      <Plane size={14} /> Aircraft
+                      <Plane size={14} /> Aircrafts
                     </span>
                     <span className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/30 px-3 py-1.5 rounded-full">
                       <Target size={14} /> Boxing
@@ -232,30 +222,30 @@ export default function AboutPage() {
             {/* Photo break - subtle image gallery */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-4">
               <ProjectImage
-                src="/about_heroo.jpg"
+                src="/engine.jpg"
                 alt="Workspace"
-                height={{ mobile: "h-[120px]", desktop: "md:h-[150px]" }}
+                height={{ mobile: "h-[150px]", desktop: "md:h-[180px]" }}
                 scrollable={false}
                 className="rounded-xl"
               />
               <ProjectImage
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop"
+                src="boxing.jpg"
                 alt="Boxing"
-                height={{ mobile: "h-[120px]", desktop: "md:h-[150px]" }}
+                height={{ mobile: "h-[150px]", desktop: "md:h-[180px]" }}
                 scrollable={false}
                 className="rounded-xl"
               />
               <ProjectImage
-                src="https://images.unsplash.com/photo-1530549387789-4c1017266634?q=80&w=2070&auto=format&fit=crop"
+                src="/blueprint.jpg"
                 alt="Swimming"
-                height={{ mobile: "h-[120px]", desktop: "md:h-[150px]" }}
+                height={{ mobile: "h-[150px]", desktop: "md:h-[180px]" }}
                 scrollable={false}
                 className="rounded-xl"
               />
               <ProjectImage
-                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+                src="/gaming.avif"
                 alt="Gaming"
-                height={{ mobile: "h-[120px]", desktop: "md:h-[150px]" }}
+                height={{ mobile: "h-[150px]", desktop: "md:h-[180px]" }}
                 scrollable={false}
                 className="rounded-xl"
               />

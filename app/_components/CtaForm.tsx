@@ -133,7 +133,7 @@ const CtaForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-white/60 text-muted-foreground border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
+                    className="w-full  text-muted-foreground border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
                     placeholder="Enter your name"
                 />
                 {errors.name && (
@@ -151,7 +151,7 @@ const CtaForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-white/90 text-muted-foreground border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
+                    className="w-full  text-muted-foreground border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
                     placeholder="you@company.com"
                 />
                 {errors.email && (
@@ -181,7 +181,7 @@ const CtaForm = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full bg-white/90 text-muted-foreground border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
+                        className="w-full  text-muted-foreground border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
                         placeholder="+1 (___) ___ ____"
                     />
                 </div>
@@ -196,7 +196,7 @@ const CtaForm = () => {
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleChange}
-                    className="w-full bg-white/90 text-muted-foreground border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all appearance-none"
+                    className="w-full  text-muted-foreground border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all appearance-none"
                 >
                     <option value="">Select a service</option>
                     {services.map((service) => (
@@ -233,7 +233,7 @@ const CtaForm = () => {
                         onChange={handleChange}
                         rows={4}
                         placeholder="Tell me about your project goals, timeline, and any specific requirements..."
-                        className="w-full bg-white/90 text-muted-foreground border border-gray-200 px-4 py-3 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
+                        className="w-full  text-muted-foreground border border-gray-200 px-4 py-3 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-primary transition-all"
                     />
                 </div>
             )}

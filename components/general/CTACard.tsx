@@ -45,7 +45,7 @@ export default function CTACard({ contactHref = "mailto:hakheem.dev@gmail.com" }
             
             {/* Download CV  */}
             <a 
-              href="/docs/hector_john_resume.pdf" 
+              href="/docs/Hector John Dev Resume.pdf" 
               className="px-12 py-6 border border-background/20 hover:border-background/50 text-background rounded-full font-black uppercase tracking-widest text-xs transition-all"
             >
               Download CV

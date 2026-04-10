@@ -57,7 +57,7 @@ export function Trendify() {
             </div>
 
             <a 
-              href="/projects/Trendify" 
+              href="/projects/trendify" 
               className="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground border border-border rounded-lg font-medium hover:bg-muted transition-all w-full sm:w-fit"
             >
               View Case Study <ArrowRight size={16} />
