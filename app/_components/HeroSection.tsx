@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef} 
-      className="relative pt-28 pb-20 md:pt-0 md:pb-0  lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
+      className="relative pt-16 pb-20 md:pt-0 md:pb-0  lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-background"
     >
       {/* 1. BACKGROUND IMAGE */}
       <motion.div 

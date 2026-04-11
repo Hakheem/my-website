@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Smartphone, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Trendify() {
-  const images = ["/trendify-home.png", "/step_mockup2.png", "/step_mockup3.png"];
-  const [current, setCurrent] = useState(0);
+  const images = ["/trendify-home.png", "/product screen.png", "/single category.png", "/checkout details.png", "/notification screen.png", "/profile screen.png" ];
+  const [current, setCurrent] = useState(0); 
 
   return (
     <section className="w-full py-10 px-4 md:px-0">

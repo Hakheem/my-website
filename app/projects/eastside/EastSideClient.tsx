@@ -144,7 +144,7 @@ export default function EastSideClient() {
           <ProjectImage
             src="/eastside_home.png"
             alt="East Side Urban storefront"
-            height={{ mobile: "h-[250px]", desktop: "md:h-[400px]" }}
+            height={{ mobile: "h-[300px]", desktop: "md:h-[600px]" }}
           />
         </motion.div>
       </section>

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import Metadata from 'next';
 import EastRideClient from './EastRideClient';
 
 export const metadata: Metadata = {

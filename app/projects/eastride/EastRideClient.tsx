@@ -154,7 +154,7 @@ export default function EastRideClient() {
           <ProjectImage
             src="/eastride_home.png"
             alt="EastRide AI Marketplace homepage"
-            height={{ mobile: "h-[250px]", desktop: "md:h-[400px]" }}
+            height={{ mobile: "h-[300px]", desktop: "md:h-[600px]" }}
           />
         </motion.div>
       </section>

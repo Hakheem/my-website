@@ -17,9 +17,12 @@ import {
 import CTACard from '@/components/general/CTACard';
 
 const MOCKUP_SCREENS = [
-    { src: "/trendify-home.png", label: "Home â€” Browse" },
-    { src: "/step_mockup2.png", label: "Product Detail" },
-    { src: "/step_mockup3.png", label: "Delivery Flow" },
+    { src: "/trendify-home.png", label: "Home Screen" },
+    { src: "/product screen.png", label: "Products Screen" },
+    { src: "/single category.png", label: "Single Category" },
+    { src: "/checkout details.png", label: "Checkout Details" },
+    { src: "/notification screen.png", label: "Notifications" },
+    { src: "/profile screen.png", label: "Profile" },
 ];
 
 const DESIGN_DECISIONS = [
@@ -163,7 +166,7 @@ export default function TrendifyClient() {
                                     key={activeScreen}
                                     src={MOCKUP_SCREENS[activeScreen].src}
                                     alt={MOCKUP_SCREENS[activeScreen].label}
-                                    className="w-full h-full object-contain drop-shadow-2xl"
+                                    className="w-full h-full object-contain drop-shadow-xl"
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}

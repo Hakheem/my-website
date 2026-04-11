@@ -117,7 +117,7 @@ export function ProjectCard({
               </div>
             </div>
 
-            <div className="flex items-center gap-4 mt-auto">
+            <div className="flex flex-wrap items-center gap-4 mt-auto">
               <a 
                 href={liveLink} 
                 target="_blank"

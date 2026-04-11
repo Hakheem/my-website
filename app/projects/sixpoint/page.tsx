@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import Metadata from 'next';
 import SixpointClient from './SixpointClient';
 
 export const metadata: Metadata = {

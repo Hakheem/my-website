@@ -132,7 +132,7 @@ export default function SixpointClient() {
             alt="Sixpoint Victoria — Before redesign"
             label="Before"
             labelVariant="before"
-            height={{ mobile: "h-[250px]", desktop: "md:h-[500px]" }}
+            height={{ mobile: "h-[300px]", desktop: "md:h-[600px]" }}
           />
           <ProjectImage
             src="/sixpoint_revamp.png"

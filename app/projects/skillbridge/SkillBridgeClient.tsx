@@ -22,7 +22,7 @@ const TECH_STACK = [
   { name: "Tailwind CSS", category: "Styling" },
   { name: "PostgreSQL", category: "Database" },
   { name: "AWS S3", category: "Media Storage" },
-  { name: "M-Pesa API", category: "Payments" },
+  { name: "M-Pesa", category: "Payments" },
   { name: "TypeScript", category: "Language" },
   { name: "Prisma ORM", category: "Data Layer" },
   { name: "Vercel", category: "Deployment" },
@@ -144,7 +144,7 @@ export default function SkillBridgeClient() {
           <ProjectImage
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
             alt="SkillBridge LMS Platform"
-            height={{ mobile: "h-[250px]", desktop: "md:h-[400px]" }}
+            height={{ mobile: "h-[300px]", desktop: "md:h-[600px]" }}
           />
         </motion.div>
       </section>
