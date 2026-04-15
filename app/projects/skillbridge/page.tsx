@@ -1,7 +1,7 @@
 import Metadata from 'next';
 import SkillBridgeClient from './SkillBridgeClient';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "SkillBridge | Online Learning Platform",
   description: "A comprehensive online learning platform with low-latency video streaming, real-time progress tracking, and M-Pesa payment integration.",
 };
