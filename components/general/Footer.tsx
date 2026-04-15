@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold tracking-tight font-sans">
               Let's build something <span className="text-muted-foreground italic font-light">impactful {' '} </span> together.
-            </h3>
+            </h3> 
             <p className="text-muted-foreground max-w-sm leading-relaxed font-sans">
               I specialize in bridging the gap between complex engineering and strategic business goals. 
               Currently open to new projects and partnerships.

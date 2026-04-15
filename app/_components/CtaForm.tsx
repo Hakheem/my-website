@@ -128,7 +128,7 @@ const CtaForm = () => {
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
                     Full Name *
                 </label>
-                <input
+                <input 
                     type="text"
                     name="name"
                     value={formData.name}

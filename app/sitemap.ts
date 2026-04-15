@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next'
+import MetadataRoute from 'next'
 
 const BASE_URL = 'https://hakheem.netlify.app'
 
@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'east-side-urban',
     'east-ride'
   ]
-
+ 
   const projectUrls = projects.map((project) => ({
     url: `${BASE_URL}/projects/${project}`,
     lastModified: new Date(),

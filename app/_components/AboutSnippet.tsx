@@ -234,24 +234,6 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Technical Snapshot */}
-        {/* <div className="mt-16 pt-8 border-t border-border/50">
-          <div className="flex flex-col md:flex-row md:items-center gap-6">
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground whitespace-nowrap">
-              Core Stack
-            </span>
-            <div className="flex flex-wrap gap-2">
-              {techStack.map((tech, i) => (
-                <span 
-                  key={i}
-                  className="px-3 py-1 text-[11px] rounded-md bg-secondary/30 border border-border/50 text-foreground/80 font-medium hover:bg-secondary/50 transition-colors cursor-default"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ export function Trendify() {
   const images = ["/trendify-home.png", "/product screen.png", "/single category.png", "/checkout details.png", "/notification screen.png", "/profile screen.png" ];
   const [current, setCurrent] = useState(0); 
 
-  return (
+  return ( 
     <section className="w-full py-10 px-4 md:px-0">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 bg-card border  transition-all duration-500 shadow-sm">

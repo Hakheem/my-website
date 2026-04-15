@@ -9,7 +9,7 @@ interface ProjectImageProps {
   label?: string;
   labelPosition?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
   labelVariant?: 'before' | 'after' | 'default';
-  height?: {
+  height?: { 
     mobile?: string;
     desktop?: string;
   };

@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { ExternalLink, ArrowRight, LucideIcon, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 
 interface ProjectCardProps {
@@ -10,7 +10,7 @@ interface ProjectCardProps {
   liveLink: string;
   caseStudyLink: string;
   category: string;
-  Icon: LucideIcon;
+  Icon: React.ElementType; 
   imageSide?: "left" | "right";
 }
 
@@ -41,12 +41,10 @@ export function ProjectCard({
               imageSide === "right" ? "lg:order-2 lg:border-l" : "lg:order-1 lg:border-r"
             }`}
           >
-            {/* CAROUSEL VIEWPORT */}
             <div className="h-full w-full overflow-hidden" ref={emblaRef}>
               <div className="flex h-full">
                 {images.map((src, index) => (
                   <div key={index} className="flex-[0_0_100%] min-w-0 h-full relative">
-                    {/* Internal Scrollable Container for each image */}
                     <div className="h-full w-full overflow-y-auto scrollbar-hide px-2 pt-4 custom-scrollbar">
                       <img 
                         src={src} 
@@ -59,7 +57,6 @@ export function ProjectCard({
               </div>
             </div>
 
-            {/* CAROUSEL NAVIGATION */}
             {images.length > 1 && (
               <>
                 <button 
@@ -75,7 +72,6 @@ export function ProjectCard({
                   <ChevronRight size={20} />
                 </button>
                 
-                {/* Visual Paging Dots */}
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-1.5 z-30">
                   {images.map((_, i) => (
                     <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary/40" />
@@ -95,6 +91,7 @@ export function ProjectCard({
           }`}>
             <div>
               <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                {/* Render the Icon component passed as a prop */}
                 <Icon size={18} />
                 <span className="text-sm tracking-wider uppercase">{category}</span>
               </div>
@@ -121,6 +118,7 @@ export function ProjectCard({
               <a 
                 href={liveLink} 
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:opacity-90 transition-all"
               >
                 Preview Project <ExternalLink size={16} />

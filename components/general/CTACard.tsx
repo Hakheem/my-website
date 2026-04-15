@@ -41,7 +41,7 @@ export default function CTACard({ contactHref = "mailto:hakheem.dev@gmail.com" }
                 <span className="relative z-10">Get In Touch</span>
                 <ArrowUpRight className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all" size={20} />
               </a>
-            )}
+            )} 
             
             {/* Download CV  */}
             <a 
