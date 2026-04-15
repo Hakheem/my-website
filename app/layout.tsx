@@ -1,4 +1,3 @@
-import Metadata from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/Navbar";
@@ -13,7 +12,7 @@ const outfit = Outfit({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: "Hector John | Software Engineer & Product Architect",
     template: "%s | Hector John",
