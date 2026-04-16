@@ -1,21 +1,19 @@
-import MetadataRoute from 'next'
+const BASE_URL = 'https://hector-john.online'; 
 
-const BASE_URL = 'https://hakheem.netlify.app'
-
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   const projects = [
     'skillbridge',
     'sixpoint', 
     'east-side-urban',
     'east-ride'
-  ]
+  ];
  
   const projectUrls = projects.map((project) => ({
     url: `${BASE_URL}/projects/${project}`,
     lastModified: new Date(),
     changeFrequency: 'yearly' as const,
     priority: 0.8,
-  }))
+  }));
 
   const routes = [
     {
@@ -42,8 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
-  ]
+  ];
 
-  return [...routes, ...projectUrls]
+  return [...routes, ...projectUrls];
 }
 
